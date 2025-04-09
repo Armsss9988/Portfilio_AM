@@ -5,11 +5,11 @@ import { FiExternalLink } from "react-icons/fi";
 const ProjectCard = ({ project }) => {
   return (
     <div className="bg-[var(--color-background)] border border-[var(--color-border)] rounded-xl overflow-hidden shadow-[0_0_20px_var(--color-primary)/20] hover:shadow-[0_0_25px_var(--color-primary)] transition duration-300 flex flex-col">
-      <img
+      {/* <img
         src={project.image}
         alt={project.title}
         className="w-full h-48 object-cover"
-      />
+      /> */}
 
       <div className="p-5 flex-1 flex flex-col justify-between">
         <div>
@@ -33,15 +33,39 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <div className="flex justify-between items-center">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 hover:text-[var(--color-primary)] transition"
-          >
-            <FaGithub size={18} />
-            Code
-          </a>
+          {project.github2 ? (
+            <div className="flex flex-row gap-4">
+              {" "}
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:text-[var(--color-primary)] transition"
+              >
+                <FaGithub size={18} />
+                Code BE
+              </a>{" "}
+              <a
+                href={project.github2}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:text-[var(--color-primary)] transition"
+              >
+                <FaGithub size={18} />
+                Code FE
+              </a>
+            </div>
+          ) : (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 hover:text-[var(--color-primary)] transition"
+            >
+              <FaGithub size={18} />
+              Code
+            </a>
+          )}
           <a
             href={project.live}
             target="_blank"

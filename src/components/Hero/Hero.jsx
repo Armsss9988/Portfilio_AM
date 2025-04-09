@@ -22,9 +22,9 @@ const Hero = () => {
           </div>
 
           <h1 className="text-3xl md:text-5xl font-bold text-[var(--color-foreground)] leading-tight">
-            Le Nguyen Hoang Long
+            Lê Anh Minh
             <span className="block text-lg md:text-2xl font-light mt-2 text-[var(--color-primary)]">
-              Frontend Developer
+              Fullstack Developer
             </span>
           </h1>
 

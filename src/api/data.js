@@ -20,86 +20,93 @@ export const myTechStack = [
   { icon: <SiTailwindcss />, label: "Tailwind", color: "#38bdf8" },
   { icon: <FaNodeJs />, label: "Node.js", color: "#68a063" },
   { icon: <SiMongodb />, label: "MongoDB", color: "#ffca28" },
+  { icon: <SiFirebase />, label: "Firebase", color: "#ffcb2b" },
+  { icon: <SiNextdotjs />, label: "NestJS", color: "#e0234e" },
+  { icon: <SiMongodb />, label: "PostgreSQL", color: "#336791" },
+  { icon: <SiReact />, label: "WebSocket", color: "#333333" },
+  { icon: <SiReact />, label: "Ant Design", color: "#0170fe" },
+  { icon: <SiReact />, label: "Material-UI", color: "#0081cb" },
+  { icon: <SiReact />, label: "Unity", color: "#000000" },
 ];
 
 export const myProjects = [
   {
+    title: "DevHub – Real-time Developer Chat Platform",
+    description:
+      "A modern, full-stack real-time chat application for developers. Allows users to exchange messages instantly, and manage conversations in dedicated rooms with seamless UX.",
+    image: "/images/devhub.png",
+    techStack: [
+      "Next.js 14",
+      "NestJS",
+      "TypeScript",
+      "WebSocket",
+      "Prisma",
+      "PostgreSQL",
+      "TailwindCSS",
+    ],
+    github: "https://github.com/Armsss9988/DevHubChatNext",
+    live: "#",
+  },
+  {
     title: "AI Quiz App",
     description:
-      "A quiz web app powered by Gemini AI, allowing real-time answer analysis and AI-generated explanations.",
+      "A quiz web app powered by Gemini AI, allowing AI-generated explanations.",
     image: "/images/quiz-app.png",
-    techStack: ["Next.js", "TailwindCSS", "Firebase", "Gemini AI"],
-    github: "https://github.com/yourusername/ai-quiz-app",
-    live: "https://aiquizapp.vercel.app",
+    techStack: ["Javascript", "TailwindCSS", "Firebase", "Gemini AI"],
+    github: "https://github.com/bxthien/Quiz-Onl-OJT",
+    live: "https://quizonl-dev.netlify.app/",
   },
   {
-    title: "Crypto Dashboard",
+    title: "University Magazine Contribution System",
     description:
-      "Real-time cryptocurrency dashboard with buy/sell signals, trend analysis, and integrated chat over chart.",
-    image: "/images/crypto-dashboard.png",
-    techStack: ["Next.js", "TypeScript", "Recharts", "CoinGecko API"],
-    github: "https://github.com/yourusername/crypto-dashboard",
-    live: "https://cryptodash.vercel.app",
+      "A system to collect and manage student contributions for the annual university magazine, with role-based access control and reporting features.",
+    image: "/images/university-magazine.png",
+    techStack: ["Node.js", "Express.js", "React.js", "MongoDB", "Google Mail"],
+    github:
+      "https://github.com/Armsss9988/University-Magazine-Contribution-System-BE",
+    github2:
+      "https://github.com/Armsss9988/University-Magazine-Contribution-System-FE",
+    live: "#",
   },
   {
-    title: "Portfolio Dev",
+    title: "2D Forgotten Game",
     description:
-      "Modern developer portfolio using 3D background (Three.js), animations and futuristic UI.",
-    image: "/images/portfolio.png",
-    techStack: ["Next.js", "Three.js", "TailwindCSS"],
-    github: "https://github.com/yourusername/portfolio",
-    live: "https://yourportfolio.vercel.app",
+      "A 2D top-down RPG game featuring inventory management, combat, quest systems, and cloud save functionality.",
+    image: "/images/forgotten-game.png",
+    techStack: ["Unity Engine", "C#", "Unity Cloud Save"],
+    github: "https://github.com/Armsss9988/My-Course-Project/",
+    live: "#",
   },
 ];
 
 export const mySkills = [
   {
-    name: "React",
-    icon: <SiReact />,
-    certImg: "/certificates/react.png",
-    certTitle: "Meta Front-End Certificate",
-    certLink: "https://coursera.org/example-react-cert",
-  },
-  {
-    name: "Firebase",
-    icon: <SiFirebase />,
-    certImg: "/certificates/firebase.png",
-    certTitle: "Firebase Web Devs",
-    certLink: "https://firebase.google.com/cert",
-  },
-  {
-    name: "Next.js",
-    icon: <SiNextdotjs />,
-    certImg: "/certificates/next.png",
-    certTitle: "Next.js Pro Course",
-    certLink: "#",
-  },
-  {
-    name: "Tailwind",
-    icon: <SiTailwindcss />,
-    certImg: "/certificates/tailwind.png",
-    certTitle: "TailwindCSS Mastery",
-    certLink: "#",
+    name: "Back-End Development and APIs",
+    icon: <FaNodeJs />, // Sử dụng icon Node.js để đại diện
+    certImg: "/image.png", // Đường dẫn đến hình ảnh chứng chỉ (nếu có)
+    certTitle: "FreeCodeCamp Back-End Development and APIs",
+    certLink:
+      "https://www.freecodecamp.org/certification/AnhMinh9988/back-end-development-and-apis",
   },
 ];
 
 export const myExperiences = [
   {
     type: "education",
-    year: "2019 - 2023",
-    title: "Bachelor of Computer Science",
-    desc: "Studied at XYZ University with a focus on frontend, UI/UX, and modern web technologies.",
+    year: "2020 - 2025",
+    title: "FPT Greenwich Da Nang University",
+    desc: "Pursuing advanced studies in software engineering, focusing on full-stack development and cloud computing.",
   },
   {
     type: "work",
-    year: "2022 - 2023",
-    title: "Frontend Intern",
-    desc: "Interned at ABC Tech, building responsive UIs using React and TailwindCSS.",
+    year: "05/2024 - 09/2024",
+    title: "Intern at VNPT Quang Binh",
+    desc: "Participated in an internship at VNPT Quang Binh, supporting the development and maintenance of internal software systems while gaining insights into corporate workflows.",
   },
   {
     type: "work",
-    year: "2023 - Present",
-    title: "Freelance Developer",
-    desc: "Developing modern web apps with Next.js, Firebase, and Three.js.",
+    year: "02/2025-05/2025",
+    title: "OJT at Devplus",
+    desc: "Joined the On-the-Job Training (OJT) program at Devplus, focusing on developing modern web applications using technologies like React, Node.js, and TailwindCSS.",
   },
 ];
