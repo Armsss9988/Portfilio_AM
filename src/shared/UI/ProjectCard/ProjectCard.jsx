@@ -4,19 +4,13 @@ import { FiExternalLink } from "react-icons/fi";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="bg-[var(--color-background)] border border-[var(--color-border)] rounded-xl overflow-hidden shadow-[0_0_20px_var(--color-primary)/20] hover:shadow-[0_0_25px_var(--color-primary)] transition duration-300 flex flex-col">
-      {/* <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-48 object-cover"
-      /> */}
-
+    <div className="bg-[var(--color-background)] border border-[var(--color-border)] rounded-xl overflow-hidden shadow-[0_0_20px_var(--color-primary)/20] hover:shadow-[0_0_25px_var(--color-primary)] transition duration-300 flex flex-col h-full">
       <div className="p-5 flex-1 flex flex-col justify-between">
         <div>
-          <h3 className="text-xl font-semibold mb-2 text-[var(--color-primary)]">
+          <h3 className="text-xl font-semibold mb-2 text-[var(--color-primary)] h-[48px]">
             {project.title}
           </h3>
-          <p className="text-sm text-[var(--color-foreground)] mb-3">
+          <p className="text-sm text-[var(--color-foreground)] mb-3 h-[100px]">
             {project.description}
           </p>
         </div>
@@ -35,7 +29,6 @@ const ProjectCard = ({ project }) => {
         <div className="flex justify-between items-center">
           {project.github2 ? (
             <div className="flex flex-row gap-4">
-              {" "}
               <a
                 href={project.github}
                 target="_blank"
@@ -44,7 +37,7 @@ const ProjectCard = ({ project }) => {
               >
                 <FaGithub size={18} />
                 Code BE
-              </a>{" "}
+              </a>
               <a
                 href={project.github2}
                 target="_blank"

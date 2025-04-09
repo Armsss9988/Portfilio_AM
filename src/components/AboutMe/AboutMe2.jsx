@@ -13,11 +13,14 @@ const AboutMe2 = ({ dataSource }) => {
             I'm a creative and detail-oriented{" "}
             <span className="text-[var(--color-primary)] font-semibold">
               Frontend Developer
-            </span>
-            with a strong passion for building modern, user-focused interfaces.
-            I thrive in environments where design meets logic and love working
-            with new technologies to push the boundaries of what’s possible on
-            the web.
+            </span> {" "}
+            about to graduate with a strong foundation in software development
+            and a proactive mindset. Continuously sharpened skills in web
+            technologies beyond the academic program through self-study and
+            real-world practice. I’m a fast learner, adaptive, and take
+            initiative in team environments. I’m committed to long-term growth,
+            both personally and professionally, and aim to contribute
+            meaningfully to the success of the company I grow with.
           </p>
         </div>
 

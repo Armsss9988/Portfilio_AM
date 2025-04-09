@@ -2,47 +2,47 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--color-background)] border-t border-[var(--color-border)] text-[var(--color-foreground)] py-10 px-6 text-center">
-      <div className="max-w-4xl mx-auto space-y-4">
+    <footer className="bg-[var(--color-background)] border-t border-[var(--color-border)] text-[var(--color-foreground)] py-12 px-8 text-center">
+      <div className="max-w-4xl mx-auto space-y-6">
         {/* Dev Name + Quote */}
-        <h2 className="text-2xl font-bold text-[var(--color-primary)] tracking-wide">
-          My Portfolio
+        <h2 className="text-3xl font-extrabold text-[var(--color-primary)] tracking-wider">
+          Lê Anh Minh's Portfolio
         </h2>
-        <p className="text-sm opacity-80 italic">
-          "Designing interfaces. Developing dreams."
+        <p className="text-base opacity-90 italic">
+          "Code with passion, design with purpose."
         </p>
 
         {/* Social Icons */}
-        <div className="flex justify-center space-x-6 pt-2">
+        <div className="flex justify-center space-x-8 pt-4">
           <a
-            href="mailto:youremail@example.com"
-            className="hover:text-[var(--color-primary)] transition duration-300"
+            href="mailto:leanhminh098@gmail.com"
+            className="hover:text-[var(--color-primary)] transition duration-300 transform hover:scale-110"
           >
-            <Mail size={20} />
+            <Mail size={24} />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/Armsss9988"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[var(--color-primary)] transition duration-300"
+            className="hover:text-[var(--color-primary)] transition duration-300 transform hover:scale-110"
           >
-            <Github size={20} />
+            <Github size={24} />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/l%C3%AA-anh-minh-lamlamlam/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[var(--color-primary)] transition duration-300"
+            className="hover:text-[var(--color-primary)] transition duration-300 transform hover:scale-110"
           >
-            <Linkedin size={20} />
+            <Linkedin size={24} />
           </a>
         </div>
 
         {/* Copyright */}
-        <p className="text-xs text-gray-400 pt-6">
-          © {new Date().getFullYear()} — Built by{" "}
+        <p className="text-sm text-gray-500 pt-8">
+          © {new Date().getFullYear()} — Crafted with ❤️ by{" "}
           <span className="text-[var(--color-primary)] font-semibold">
-            Hoang Long Le
+            Lê Anh Minh
           </span>
         </p>
       </div>

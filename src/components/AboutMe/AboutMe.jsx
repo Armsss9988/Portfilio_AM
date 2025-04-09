@@ -32,11 +32,9 @@ const AboutMe = () => {
         <p className="text-lg leading-relaxed max-w-3xl">
           I'm a passionate{" "}
           <span className="text-[var(--color-primary)] font-semibold">
-            Frontend Developer
+            Fullstack Developer
           </span>{" "}
-          who loves building interactive and visually stunning web applications.
-          I enjoy working with modern tech stacks and continuously improving my
-          craft to create seamless user experiences.
+          about to graduate with a strong foundation in software development and a proactive mindset. Continuously sharpened skills in web technologies beyond the academic program through self-study and real-world practice. I’m a fast learner, adaptive, and take initiative in team environments. I’m committed to long-term growth, both personally and professionally, and aim to contribute meaningfully to the success of the company I grow with.
         </p>
 
         <div className="mt-6">

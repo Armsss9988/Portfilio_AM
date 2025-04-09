@@ -14,7 +14,6 @@ export default function Home() {
       <Skills title={"Certifications & Badges"} dataSource={mySkills} />
       <Projects title={"My Projects"} dataSource={myProjects} />
       <Experiences title={"Experience Timeline"} dataSource={myExperiences} />
-      {/* <Contact /> */}
     </>
   );
 }

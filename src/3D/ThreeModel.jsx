@@ -5,7 +5,7 @@ import { OrbitControls, useGLTF, Stage, Environment } from "@react-three/drei";
 import { Suspense } from "react";
 
 const Model = () => {
-  const gltf = useGLTF("/models/myModel.glb");
+  const gltf = useGLTF("/models/base_basic_shaded.glb");
 
   return (
     <primitive
@@ -20,10 +20,10 @@ const Model = () => {
 const ThreeModel = () => {
   return (
     <Canvas
-      className="absolute inset-0 z-0 md:max-w-xl py-8 md:py-0 hidden lg:block border-2 border-[var(--color-primary)] rounded-2xl"
+      className="absolute inset-0 z-0 md:max-w-xl md:max-h-[500px] py-0 md:py-0 hidden lg:block border-2 border-[var(--color-primary)] rounded-2xl"
       camera={{ position: [0, 1.5, 5], fov: 45 }}
     >
-      <ambientLight intensity={0.4} />
+      <ambientLight intensity={0.1} />
       <directionalLight position={[3, 2, 1]} intensity={1.2} />
 
       {/* Optional: Background Gradient */}
@@ -47,7 +47,7 @@ const ThreeModel = () => {
       <OrbitControls
         enableZoom={false}
         autoRotate
-        autoRotateSpeed={1.25}
+        autoRotateSpeed={1.5}
         enablePan={false}
       />
     </Canvas>

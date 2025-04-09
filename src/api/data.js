@@ -7,8 +7,8 @@ import {
   SiMongodb,
   SiExpress,
 } from "react-icons/si";
-
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs } from "react-icons/fa";
+import Image from "next/image";
 
 export const myTechStack = [
   { icon: <FaHtml5 />, label: "HTML5", color: "#e34c26" },
@@ -23,10 +23,63 @@ export const myTechStack = [
   { icon: <SiFirebase />, label: "Firebase", color: "#ffcb2b" },
   { icon: <SiNextdotjs />, label: "NestJS", color: "#e0234e" },
   { icon: <SiMongodb />, label: "PostgreSQL", color: "#336791" },
-  { icon: <SiReact />, label: "WebSocket", color: "#333333" },
-  { icon: <SiReact />, label: "Ant Design", color: "#0170fe" },
-  { icon: <SiReact />, label: "Material-UI", color: "#0081cb" },
-  { icon: <SiReact />, label: "Unity", color: "#000000" },
+  {
+    icon: (
+      <Image
+        src="/socketdotio.svg"
+        alt="Your Portrait"
+        width={30}
+        height={30}
+        clas
+        sName="object-cover w-full h-full"
+      />
+    ),
+    label: "WebSocket",
+    color: "#333333",
+  },
+
+  {
+    icon: (
+      <Image
+        src="/antdesign.svg"
+        alt="Your Portrait"
+        width={30}
+        height={30}
+        clas
+        sName="object-cover w-full h-full"
+      />
+    ),
+    label: "Ant Design",
+    color: "#0170fe",
+  },
+  {
+    icon: (
+      <Image
+        src="/c.png"
+        alt="Your Portrait"
+        width={30}
+        height={30}
+        clas
+        sName="object-cover w-full h-full"
+      />
+    ),
+    label: "C#",
+    color: "#0081cb",
+  },
+  {
+    icon: (
+      <Image
+        src="/unity.svg"
+        alt="Your Portrait"
+        width={30}
+        height={30}
+        clas
+        sName="object-cover w-full h-full"
+      />
+    ),
+    label: "Unity",
+    color: "#000000",
+  },
 ];
 
 export const myProjects = [
