@@ -97,8 +97,9 @@ export const myProjects = [
       "PostgreSQL",
       "TailwindCSS",
     ],
-    github: "https://github.com/Armsss9988/DevHubChatNext",
-    live: "#",
+    github: "https://github.com/Armsss9988/DevHubChat_Nest",
+    github2: "https://github.com/Armsss9988/DevHubChat_Next",
+    live: "https://dev-hub-chat-next.vercel.app/",
   },
   {
     title: "AI Quiz App",

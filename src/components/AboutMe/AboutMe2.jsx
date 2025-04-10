@@ -13,7 +13,7 @@ const AboutMe2 = ({ dataSource }) => {
             I'm a creative and detail-oriented{" "}
             <span className="text-[var(--color-primary)] font-semibold">
               Frontend Developer
-            </span> {" "}
+            </span>{" "}
             about to graduate with a strong foundation in software development
             and a proactive mindset. Continuously sharpened skills in web
             technologies beyond the academic program through self-study and
@@ -32,7 +32,7 @@ const AboutMe2 = ({ dataSource }) => {
             {dataSource.map((tech, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center p-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-background)] hover:shadow-[0_0_15px] hover:shadow-[var(--color-primary)] transition duration-300"
+                className="flex flex-col items-center justify-center p-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-background)] shadow-[#34eb37] hover:shadow-2xl transition duration-300 hover:scale-110 hover:bg-[#756e0e]"
               >
                 <div style={{ color: tech.color }} className="text-3xl mb-2">
                   {tech.icon}

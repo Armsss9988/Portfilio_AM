@@ -6,7 +6,7 @@ const BadgeCard = ({ skill }) => {
       href={skill.certLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative group bg-[var(--color-background)] border border-[var(--color-border)] rounded-xl overflow-hidden shadow-[0_0_20px_var(--color-primary)/20] hover:shadow-[0_0_25px_var(--color-primary)] transition duration-300"
+      className="relative min-h-[300px]  min-w-[380px] md:min-w-[400px] group bg-[var(--color-background)] border border-[var(--color-border)] rounded-xl overflow-hidden shadow-[0_0_20px_var(--color-primary)/20] hover:shadow-[0_0_25px_var(--color-primary)] transition duration-300"
     >
       {/* Badge Icon */}
       <div className="absolute top-2 left-2 bg-[var(--color-background)] p-1.5 rounded-full border border-[var(--color-border)] shadow-md text-[var(--color-primary)] text-xl">
@@ -17,7 +17,7 @@ const BadgeCard = ({ skill }) => {
       <img
         src={skill.certImg}
         alt={skill.name}
-        className="w-full h-40 object-cover rounded-t-xl group-hover:scale-105 transition duration-300"
+        className="w-full mt-14 h-40 object-cover group-hover:scale-105 transition duration-300"
       />
 
       {/* Info */}
